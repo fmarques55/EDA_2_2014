@@ -1,0 +1,10 @@
+/*FELIPE SAMPAIO MARQUES SOUZA
+MATRICULA: 12/0044934
+*/
+
+A funcao N^4 tem crescimento menor que 4^n. Dessa forma a eficiência do algoritmo N^4 é maior pois demanda menos processamento que 4^n.
+
+Considerando Ta(n) = n^4 e Tb(n) = 4^n;
+
+	A partir de valores de n maiores que 2 o crescimento de Ta é maior que 4^n.
+	

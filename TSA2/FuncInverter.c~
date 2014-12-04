@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void inverter(char str[], int indice, int tamanho)
+{
+	char tmp;
+
+	tmp = str[indice];
+	str[indice] = str[tamanho - indice];
+	str[tamanho - indice] = tmp;
+	if(indice == tamanho/2)
+	{
+		return;
+	}
+	inverter(str, indice+1, tamanho);
+}
+

@@ -1,0 +1,11 @@
+/*FELIPE SAMPAIO MARQUES SOUZA
+MATRICULA: 12/0044934
+*/
+
+Para valores muito grandes a funcao n^4 cresce muito mais rapido que 4^n. Dessa forma dado que
+
+Ta = n^4 -> Tempo de processamento do primeiro algoritmo
+ 
+Tb = 4^n -> Tempo de processamento do segundo algoritmo 
+
+Ta demanda mais tempo para valores de n maiores que 2.

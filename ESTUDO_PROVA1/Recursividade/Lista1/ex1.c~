@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int verifyEqualsStrings(char *string1, char *string2)
+{
+	
+	//printf("%c %c \n", *auxiliarString1, *auxiliarString2);	
+	if(*string1=='\0' && *string2=='\0')
+	{
+		return 1;
+		//printf("Strings iguais!\n");
+	}
+	else
+	{
+		if(*string1==*string2)
+		{
+			verifyEqualsStrings((string1+1),(string2+1));
+		
+		}
+		else
+		{
+			return 0;
+			//printf("Strings diferentes!\n");
+		}
+	}
+}
+int main()
+{
+	char string1[20],string2[20];
+	int resultado;
+	
+	printf("Entre com a primeira string: ");
+	__fpurge(stdin);
+	scanf("%s", string1);
+	printf("Entre com a segunda string: ");
+	__fpurge(stdin);
+	scanf("%s", string2);
+	
+	resultado = verifyEqualsStrings(string1,string2);
+	
+	return 0;
+	
+	
+}
